@@ -1,21 +1,32 @@
-// variables:
-var city = results[i].city;
-var date = results[i].date;
-var image = results[i].image;
-var temp = results[i].temperature;
-var humidity = results[i].humidity;
-var wind = results[i].wind - speed;
-var uvIndex = results[i].uv - index;
-var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q={response}";
-var results = "response.data";
+console.log("javascript is loaded");
+// var city = results[i].city;
+// var date = results[i].date;
+// var image = results[i].image;
+// var temp = results[i].temperature;
+// var humidity = results[i].humidity;
+// var wind = results[i].wind - speed;
+// var uvIndex = results[i].uv - index;
+var weatherURL = `https://api.openweathermap.org/data/2.5/weather?APPID=${API_KEY}&q=`;
+var forecastURL = `https://api.openweathermap.org/data/2.5/forecast?APPID=${API_KEY}&q=`; //attribute dt_text(actual date and time in responses)
+var uvURL = `https://api.openweathermap.org/data/2.5/uvi/forecast?APPID=${API_KEY}&q=`;
+// var results = "response.data";
+//function currentweather
 
+
+//function forecast
+
+
+
+//function UV
 
 
 
 //AJAX calls and functions
-$("city-btn").on("click", function () {
+$("#city-btn").on("click", function () {
+    var city = $("#city-input").val()
+    console.log(city)
     $.ajax({
-        url: queryURL,
+        url: weatherURL + city,
         method: "GET"
     }).then(function (response) {
         console.log(response);
