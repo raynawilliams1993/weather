@@ -30,23 +30,102 @@
                 <div id="cities-view" class="col-md-8"></div>
 
             </div>
-            <!-- <script src="https://api.openweathermap.org/api"></script> -->
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            
 
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                crossorigin="anonymous"></script>
-            <script type="text/javascript" src="keys.js"></script>
-            <script type="text/javascript" src="script.js"></script>
+            <!-- Cities will get put here -->
+            <div id="city-view"></div>
 
-        </div>
+            <h2>5 Day Forecast:</h2>
+            <div id="buttons-view"></div>
+
+            <form id="city-form">
+                <label for="city-input"></label>
+                <input type="text" id="city-input">
+                <br>
 
 
-    </div>
+                <input id="add-city" type="submit" value="5 Day Forecast!">
+            </form>
+            <div class="row row-cols-1 row-cols-md-5">
+                <div class="col mb-4">
+                    <div class="card">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h5 class="card-title" id="date1"></h5>
+                            <p class="card-text" id="temp1"></p>
+                            <p class="card-text" id="humid1"></p>
+                            <img class="card-text" id="icon1" src="https://openweathermap.org/weather-conditions"
+                                alt="weather icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h5 class="card-title" id="date2"></h5>
+                            <p class="card-text" id="temp2"></p>
+                            <p class="card-text" id="humid2"></p>
+                            <img class="card-text" id="icon2" src="https://openweathermap.org/weather-conditions"
+                                alt="weather icon"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h5 class="card-title" id="date3"></h5>
+                            <p class="card-text" id="temp3"></p>
+                            <p class="card-text" id="humid3"></p>
+                            <img class="card-text" id="icon3" src="https://openweathermap.org/weather-conditions"
+                                alt="weather icon"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h5 class="card-title" id="date4"></h5>
+                            <p class="card-text" id="temp4"></p>
+                            <p class="card-text" id="humid4"></p>
+                            <img class="card-text" id="icon4" src="https://openweathermap.org/weather-conditions"
+                                alt="weather icon"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                            <h5 class="card-title" id="date5"></h5>
+                            <p class="card-text" id="temp5"></p>
+                            <p class="card-text" id="humid5"></p>
+                            <img class="card-text" id="icon5" src="https://openweathermap.org/weather-conditions"
+                                alt="weather icon"></img>
+                        </div>
+                    </div>
+                    <!-- <script src="https://api.openweathermap.org/api"></script> -->
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                        crossorigin="anonymous"></script>
+
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                        crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+                    <script type="text/javascript" src="keys.js"></script>
+                    <script type="text/javascript" src="script.js"></script>
+
+                </div>
+
+
+            </div>
 
 </body>
 
