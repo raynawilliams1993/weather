@@ -2,7 +2,7 @@ console.log("javascript is loaded");
 var weatherURL = `https://api.openweathermap.org/data/2.5/weather?APPID=${API_KEY}&q=`;
 var forecastURL = `https://api.openweathermap.org/data/2.5/forecast?APPID=${API_KEY}q={city+name},{country+code}`
 var latCurrent;
-
+var tempFiveDay;
 //AJAX calls and functions
 
 $("#city-btn").on("click", function () {
@@ -47,7 +47,9 @@ $("#city-btn").on("click", function () {
         method: "GET"
     }).then(function(response) {
         console.log(response);
-
+        var tempFiveDay = response.forecast.time;
+        console.log(tempFiveDay)
+        
     })
    })
 
